@@ -146,5 +146,4 @@ Adapter
 An Adapter for any view on the UI acts as a bridge between that view and the data that is required to create it. E.g. A PostAdapter contains a list of all posts and is responsible for creating a view on the UI for each post in the list.
 
 
-
-
+*Created as course project for ECE651- Foundations of Software Engineering in a team of 5*
