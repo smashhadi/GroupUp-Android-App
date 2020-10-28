@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateGroupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_create_group_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_group_title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:paddingEnd="10sp"
+                tools:paddingTop="10sp" />
+
+            <TextView
+                android:id="@+id/activity_create_group_group_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/group_name_title"
+                tools:layout_marginStart="5sp"
+                tools:paddingTop="10sp" />
+
+            <EditText
+                android:id="@+id/activity_create_group_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/group_name"
+                android:inputType="textPersonName"
+                tools:layout_marginStart="5sp" />
+
+            <TextView
+                android:id="@+id/activity_create_group_tags_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:padding="5sp"
+                android:text="@string/tags_title"
+                tools:paddingTop="10sp" />
+
+            <LinearLayout
+                android:id="@+id/activity_create_group_tags_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="164dp"></LinearLayout>
+
+            <Button
+                android:id="@+id/activity_create_group_btn_add_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/add_tags"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/activity_create_group_status_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5sp"
+                tools:paddingStart="10sp">
+
+                <TextView
+                    android:id="@+id/activity_create_group_status_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:text="@string/group_status_title"
+                    tools:layout_marginRight="10sp"
+                    tools:paddingRight="10sp" />
+
+                <Switch
+                    android:id="@+id/activity_create_group_status_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:showText="true"
+                    android:switchPadding="10sp"
+                    android:textOff="@string/visibility_inactive"
+                    android:textOn="@string/visibility_active"
+                    tools:textAppearance="@style/TextAppearance.AppCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_create_group_visibility_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5sp"
+                tools:paddingStart="10sp"
+                tools:paddingTop="10sp">
+
+                <TextView
+                    android:id="@+id/activity_create_group_visibility_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    android:text="@string/visibility_title"
+                    tools:layout_marginRight="10sp"
+                    tools:paddingRight="10sp" />
+
+                <Switch
+                    android:id="@+id/activity_create_group_visibility_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:showText="true"
+                    android:switchPadding="10sp"
+                    android:textOff="@string/group_status_private"
+                    android:textOn="@string/group_status_public"
+                    tools:textAppearance="@style/TextAppearance.AppCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_create_group_location_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:padding="5sp"
+                android:text="@string/location_title"
+                tools:paddingTop="15sp" />
+
+            <EditText
+                android:id="@+id/activity_create_group_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <Button
+                android:id="@+id/activity_create_group_btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="@string/create_group_submit_btn"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
