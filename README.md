@@ -1,1 +1,1 @@
-# ece651_group8
+## Social Networking Android Application -  GroupUp
